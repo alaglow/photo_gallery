@@ -38,7 +38,13 @@ arrowLeft.addEventListener('click', function () {
     popupImg.src = thumbnails[currentImgIndex].src
 })
 
+function navSlide() {
+    const lines = document.querySelector('.lines');
+    const nav = document.querySelector('.nav__links');
 
-document.addEventListener('keydown', function(e){
+    lines.addEventListener('click', function (){
+        nav.classList.toggle('nav-active')
+    })
+}
 
-})
+navSlide();
